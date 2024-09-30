@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collaborative Learning Environment</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <h1>AI Collaborative Learning Platform</h1>
+      <div class="user-profile">
+        <img src="/image.jpg" alt="Profile" class="profile-pic">
+        <span>John Doe</span>
+      </div>
+    </header>
+
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar">
+      <ul>
+        <li><a href="#">Tasks</a></li>
+        <li><a href="#">Documents</a></li>
+        <li><a href="#">AI Insights</a></li>
+        <li><a href="#">Chat</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main Workspace -->
+    <main class="workspace">
+      <section class="tasks-section">
+        <h2>Project Tasks</h2>
+        <ul id="task-list">
+          <li>Create user interface - <span class="assigned">John</span> - <span class="status">In Progress</span></li>
+          <li>Setup backend server - <span class="assigned">Jane</span> - <span class="status">Pending</span></li>
+        </ul>
+        <input type="text" placeholder="New Task" id="new-task">
+        <button id="add-task">Add Task</button>
+      </section>
+
+      <section class="chat-section">
+        <h2>Team Chat</h2>
+        <div class="chat-box">
+          <ul id="chat-messages">
+            <li><strong>John:</strong> Let’s focus on the UI today.</li>
+            <li><strong>Jane:</strong> Agreed. I’ll start setting up the backend.</li>
+          </ul>
+        </div>
+        <input type="text" id="chat-input" placeholder="Type a message">
+        <button id="send-message">Send</button>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>Active Users: John, Jane</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
