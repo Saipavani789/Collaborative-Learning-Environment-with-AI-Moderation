@@ -1,0 +1,166 @@
+/* General Styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .container {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background: #0073e6;
+    color: #fff;
+    padding: 2px 0;
+    flex-shrink: 0;
+  }
+  
+  .navbar h1 {
+    margin: 0;
+    font-size: 14px;
+    display: inline-block;
+    padding-left: 10px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    float: right;
+  }
+  
+  .nav-links li {
+    display: inline;
+    margin-left: 5px;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 10px;
+  }
+  
+  /* Header Section */
+  .header {
+    background: url('https://source.unsplash.com/400x200/?teamwork,learning') no-repeat center center/cover;
+    height: 15vh;
+    position: relative;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .header .overlay {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+  }
+  
+  .header h2 {
+    font-size: 14px;
+    margin-bottom: 2px;
+  }
+  
+  .header p {
+    font-size: 8px;
+  }
+  
+  /* Dashboard Section */
+  .dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+    padding: 2px;
+    flex-grow: 1;
+    overflow-y: auto;
+  }
+  
+  .card {
+    flex: 1 1 calc(33.33% - 2px);
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+  }
+  
+  .card h3 {
+    margin-top: 0;
+    font-size: 10px;
+  }
+  
+  .progress-bar {
+    margin-bottom: 5px;
+  }
+  
+  .progress {
+    background: #ddd;
+    height: 4px;
+    border-radius: 2px;
+    overflow: hidden;
+  }
+  
+  .progress-fill {
+    height: 4px;
+    background: #0073e6;
+  }
+  
+  /* Footer Section (Optional, if needed) */
+  .footer {
+    background: #f1f1f1;
+    text-align: center;
+    padding: 5px;
+    font-size: 10px;
+    flex-shrink: 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar h1 {
+      font-size: 12px;
+    }
+  
+    .nav-links li {
+      margin-left: 3px;
+    }
+  
+    .nav-links a {
+      font-size: 8px;
+    }
+  
+    .header {
+      height: 12vh;
+    }
+  
+    .header h2 {
+      font-size: 12px;
+    }
+  
+    .header p {
+      font-size: 6px;
+    }
+  
+    .card {
+      flex: 1 1 calc(50% - 2px);
+    }
+  
+    .dashboard {
+      gap: 1px;
+      padding: 1px;
+    }
+  
+    .card h3 {
+      font-size: 8px;
+    }
+  }
+  
