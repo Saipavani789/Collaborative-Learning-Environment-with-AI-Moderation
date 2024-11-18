@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collaborative Learning Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <h1>AI-Powered Learning Hub</h1>
+      <ul class="nav-links">
+        <li><a href="#dashboard">Dashboard</a></li>
+        <li><a href="#discussions">Discussions</a></li>
+        <li><a href="#analytics">Analytics</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Header Section -->
+  <header class="header">
+    <div class="overlay">
+      <h2>Empower Collaboration with AI</h2>
+      <p>Monitor, engage, and enhance your learning experience.</p>
+    </div>
+  </header>
+
+  <!-- Dashboard Section -->
+  <section class="dashboard">
+    <div class="card">
+      <h3>Active Discussions</h3>
+      <canvas id="discussionChart"></canvas>
+    </div>
+    <div class="card">
+      <h3>AI-Moderation Insights</h3>
+      <canvas id="moderationChart"></canvas>
+    </div>
+    <div class="card">
+      <h3>Skill Progress</h3>
+      <div class="progress-bar">
+        <span>Collaboration: 80%</span>
+        <div class="progress"><div class="progress-fill" style="width: 80%;"></div></div>
+      </div>
+      <div class="progress-bar">
+        <span>Critical Thinking: 65%</span>
+        <div class="progress"><div class="progress-fill" style="width: 65%;"></div></div>
+      </div>
+    </div>
+  </section>
+</body>
+<script src="dashboard.js"></script>
+</html>
